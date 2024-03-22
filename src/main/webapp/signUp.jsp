@@ -25,7 +25,7 @@
 		</nav>
        
 <div class="pagetitle">
-<h3 class="center showtopsignin">Sign Up</h3>
+<h3 class="center showtopsignin">メンバー登録</h3>
 </div>
         
         <div class="container">
@@ -35,23 +35,23 @@
                 <div class="buttons_item">
                     
                         <label class="form-label">ID</label>
-                        <input type="text" name="id" class="form-control">
+                        <input type="text" name="id" class="form-control" placeholder="メールアドレス">
                      
                 </div> 
 
                 <div class="buttons_item">
                     
-                        <label class="form-label">PASSWORD</label>
-                        <input type="password" name="password" class="form-control">
+                        <label class="form-label mt-3">PASSWORD</label>
+                        <input type="password" name="password" class="form-control" placeholder="8文字以上">
                      
                 </div>
                 
                 <div class="d-flex mt-3">
                 <div>
-                <input type="submit" value="Register" class="btn btn-primary "> 
+                <input type="submit" value="登録" class="btn btn-primary "> 
                 </div>
                 <div class="ms-3 mt-2">
-                <a href="index.jsp">return</a>
+                <a href="index.jsp">戻る</a>
                 </div>
                 </div>
 

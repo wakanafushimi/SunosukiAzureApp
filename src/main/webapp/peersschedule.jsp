@@ -40,10 +40,9 @@
 			<div class="collapse navbar-collapse" id="navbarNav">
 				<ul class="navbar-nav">
 					<li class="nav-item"><a class="nav-link headermenu semi"
-						href="SessionListServlet?date=datenull">Look For Sessions</a></li>
+						href="SessionListServlet?date=datenull">イベントを探す</a></li>
 					<li class="nav-item"><a
-						class="nav-link headermenu menuhere semi" href="PeersServlet">Look
-							For Peers</a></li>
+						class="nav-link headermenu menuhere semi" href="PeersServlet">仲間を探す</a></li>
 				</ul>
 			</div>
 		</div>
@@ -58,15 +57,14 @@
 		<div class="row justify-content-center showtop gapbottom">
 			<div class="col-lg-6">
 				<div class="col-lg-5 col-12">
-					<a href="PeersServlet"> <i class="fa-solid fa-arrow-left"></i>View
-						all Peers
+					<a href="PeersServlet"> <i class="fa-solid fa-arrow-left"></i>ユーザ一覧
 					</a>
 				</div>
 			</div>
 		</div>
 		<div class="gapbottom">
 			<h3 class="center"><%=name%>
-				's schedule
+				<span class="semi">のスケジュール</span>
 			</h3>
 		</div>
 		<div class="row justify-content-center">
@@ -119,9 +117,9 @@
 												<c:if test="${memberids.get(0)==sessiondetail[0]}">
 													<c:forEach var="memberid" items="${memberids}">
 														<c:if test="${memberid==loginModel.id}">
-															<div class="col-2 center">
+															<div class="col-3 center">
 																<a href="NotjoinServlet?action=${sessiondetail[0]}&id=${id}&name=${name}"
-																	class="btn btn-success btn-sm" id="joined">Joined</a>
+																	class="btn btn-secondary btn-sm mini" id="joined">キャンセル</a>
 															</div>
 															<%
 																ismember = true;
@@ -135,9 +133,9 @@
 											</c:forEach>
 
 											<c:if test="${ismember!=true}">
-												<div class="col-2 center">
+												<div class="col-3 center">
 													<a href="JoinServlet?action=${sessiondetail[0]}&id=${id}&name=${name}"
-														class="btn btn-primary btn-sm" id="join">Join</a>
+														class="btn btn-primary btn-sm mini" id="join">参加</a>
 												</div>
 											</c:if>
 										</c:if>

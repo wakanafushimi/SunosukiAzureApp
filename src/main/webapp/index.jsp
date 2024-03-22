@@ -36,7 +36,7 @@
                 </div> 
 
                 <div class="buttons_item">
-                        <label class="form-label">PASSWORD</label>
+                        <label class="form-label mt-3">PASSWORD</label>
                         <input type="password" name="password" class="form-control">
                      
                 </div>
@@ -46,7 +46,7 @@
                         <button type="submit" class="btn btn-success">Log In</button>
                     </div>
                     <div class="register_item ms-3 mt-2">
-                        <a href="signin.jsp">Sign Up</a>
+                        <a href="signUp.jsp">初めての方はこちら</a>
                     </div>
                 </div>
                 

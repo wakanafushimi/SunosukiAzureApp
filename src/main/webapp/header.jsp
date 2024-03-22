@@ -18,9 +18,9 @@
 		<div class="collapse navbar-collapse" id="navbarNav">
 			<ul class="navbar-nav">
 				<li class="nav-item"><a class="nav-link headermenu semi"
-					href="SessionListServlet?date=datenull">Look For Sessions</a></li>
+					href="SessionListServlet?date=datenull">イベントを探す</a></li>
 				<li class="nav-item"><a class="nav-link headermenu semi"
-					href="PeersServlet">Look For Peers</a></li>
+					href="PeersServlet">仲間を探す</a></li>
 			</ul>
 		</div>
 	</div>

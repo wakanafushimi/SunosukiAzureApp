@@ -32,7 +32,7 @@
 		<div class="container">
 
 			<div class="pagetitle showtop gapbottom">
-				<h3 class="center">Edit Your Profile</h3>
+				<h3 class="center">プロフィール編集</h3>
 			</div>
 			<div class="row justify-content-center">
 				<div class="col-lg-3 mb-3">
@@ -222,32 +222,36 @@
 
 
 	<div class="fixed-bottom bg-light py-3 px-4 smallfooter">
-		<ul class="nav justify-content-around">
-			<li class="nav-item"><a class="nav-link menuhere"
-				href="TrickServlet"><i class="fa-solid fa-user"></i></a></li>
-			<li class="nav-item"><a class="nav-link" href="ScheduleServlet"><i
-					class="fa-regular fa-calendar-days"></i></a></li>
-			<li class="nav-item"><a class="nav-link"
-				href="createsession.jsp"><i class="fa-solid fa-pen-to-square"></i></a></li>
-			<li class="nav-item"><a class="nav-link" href="index.jsp"><i
-					class="fa-solid fa-arrow-right-from-bracket"></i></a></li>
+	<ul class="nav justify-content-around">
+		<li class="nav-item"><a class="nav-link nav-link-footer menuhere" href="TrickServlet"><i
+				class="fa-solid fa-user center"></i>
+			<p class="smallfooterletter">プロフィール</p></a></li>
+		<li class="nav-item"><a class="nav-link nav-link-footer" href="ScheduleServlet"><i
+				class="fa-regular fa-calendar-days center"></i>
+			<p class="smallfooterletter">スケジュール</p></a></li>
+		<li class="nav-item"><a class="nav-link nav-link-footer" href="createsession.jsp"><i
+				class="fa-solid fa-pen-to-square center"></i>
+			<p class="smallfooterletter">イベント作成</p></a></li>
+		<li class="nav-item"><a class="nav-link nav-link-footer" href="index.jsp"><i
+				class="fa-solid fa-arrow-right-from-bracket center"></i>
+			<p class="smallfooterletter">ログアウト</p></a></li>
 
-		</ul>
-	</div>
+	</ul>
+</div>
 
 
-	<div class="fixed-bottom widefooter">
-		<ul class="nav bg-light justify-content-center widefooterchild">
-			<li class="nav-item px-3"><a class="nav-link menuhere"
-				href="TrickServlet">Profile</a></li>
-			<li class="nav-item px-3"><a class="nav-link"
-				href="ScheduleServlet">Schedule</a></li>
-			<li class="nav-item px-3"><a class="nav-link"
-				href="createsession.jsp">Create Session</a></li>
-			<li class="nav-item px-3"><a class="nav-link" href="index.jsp">Sign
-					out</a></li>
-		</ul>
-	</div>
+<div class="fixed-bottom widefooter">
+	<ul class="nav bg-light justify-content-center widefooterchild">
+		<li class="nav-item px-3"><a class="nav-link menuhere" href="TrickServlet">プロフィール</a>
+		</li>
+		<li class="nav-item px-3"><a class="nav-link"
+			href="ScheduleServlet">スケジュール</a></li>
+		<li class="nav-item px-3"><a class="nav-link"
+			href="createsession.jsp">イベント作成</a></li>
+		<li class="nav-item px-3"><a class="nav-link" href="index.jsp">ログアウト</a>
+		</li>
+	</ul>
+</div>
 
 
 </body>

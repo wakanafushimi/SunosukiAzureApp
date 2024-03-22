@@ -40,10 +40,9 @@
 			<div class="collapse navbar-collapse" id="navbarNav">
 				<ul class="navbar-nav">
 					<li class="nav-item"><a class="nav-link headermenu semi"
-						href="SessionListServlet?date=datenull">Look For Sessions</a></li>
+						href="SessionListServlet?date=datenull">イベントを探す</a></li>
 					<li class="nav-item"><a
-						class="nav-link headermenu menuhere semi" href="PeersServlet">Look
-							For Peers</a></li>
+						class="nav-link headermenu menuhere semi" href="PeersServlet">仲間を探す</a></li>
 				</ul>
 			</div>
 		</div>
@@ -54,7 +53,7 @@
 		<form action="ForCoachServlet" method="get">
 			<div class="row justify-content-center showtop gapbottom">
 				<div class="row col-lg-6">
-					<div class="col-lg-5 col-12">Look for a coach?</div>
+					<div class="col-lg-5 col-12">グラトリのコーチを探す</div>
 					<div class="col-lg-5 col-9">
 						<input type="text" name="trick" class="form-control inline-block">
 					</div>
@@ -205,7 +204,7 @@
 								
 								<div class="row pt-2">
 									<div class="semi">
-										<a href="PeersScheduleServlet?id=${peer[0]}&name=${peer[2]}" class="viewpeerssession">View <c:out value="${peer[2]}"/>'s schedule <i class="fa-solid fa-arrow-right"></i></a>
+										<a href="PeersScheduleServlet?id=${peer[0]}&name=${peer[2]}" class="viewpeerssession"><c:out value="${peer[2]}"/>のスケジュール <i class="fa-solid fa-arrow-right"></i></a>
 									</div>
 									
 								</div>

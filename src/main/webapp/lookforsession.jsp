@@ -39,9 +39,9 @@
 				<ul class="navbar-nav">
 					<li class="nav-item"><a
 						class="nav-link headermenu menuhere semi"
-						href="SessionListServlet?date=datenull">Look For Sessions</a></li>
+						href="SessionListServlet?date=datenull">イベントを探す</a></li>
 					<li class="nav-item"><a class="nav-link headermenu semi"
-						href="PeersServlet">Look For Peers</a></li>
+						href="PeersServlet">仲間を探す</a></li>
 				</ul>
 			</div>
 		</div>
@@ -51,9 +51,7 @@
 		<form action="ForSessionServlet" method="get">
 			<div class="row justify-content-center showtop gapbottom">
 				<div class="row col-lg-6">
-					<div class="col-lg-5 col-12">
-						<p>Search by date?</p>
-					</div>
+					<div class="col-lg-5 col-12">日付で検索</div>
 					<div class="col-lg-5 col-9">
 						<input type="date" name="date" class="form-control inline-block">
 					</div>
@@ -116,10 +114,10 @@
 											<c:forEach var="memberid" items="${memberids}">
 												<c:if test="${memberid==loginModel.id}">
 													<%--<%System.out.println("メンバーである"); --%>
-													<div class="col-2 center">
+													<div class="col-3 center">
 														<a
 															href="NotjoinServlet?action=${sessiondetail[0]}&date=datenull"
-															class="btn btn-success btn-sm">Joined</a>
+															class="btn btn-secondary btn-sm mini">キャンセル</a>
 													</div>
 													<%
 													ismember = true;
@@ -134,10 +132,10 @@
 
 									<c:if test="${ismember!=true}">
 										<%--<c:out value="${sessiondetail[0]}"/>--%>
-										<div class="col-2 center">
+										<div class="col-3 center">
 											<a
 												href="JoinServlet?action=${sessiondetail[0]}&date=datenull"
-												class="btn btn-primary btn-sm">Join</a>
+												class="btn btn-primary btn-sm mini">参加</a>
 										</div>
 									</c:if>
 								</c:if>
@@ -295,7 +293,9 @@
 								<div class="row">
 									<div class="sessionmessage mt-2">
 										<i class="fa-regular fa-message mini"></i>
-										<p class="mini"><c:out value="${sessiondetail[3]}" /></p>
+										<p class="mini">
+											<c:out value="${sessiondetail[3]}" />
+										</p>
 									</div>
 								</div>
 								<div class="cancel cancelsession">

@@ -222,3 +222,17 @@ img{
 	}
 }
 
+.gerende{
+	display:none;
+}
+.smallfooterletter{
+	font-size:11px;
+	text-align:center;
+	margin-bottom:0;
+	margin-top:5px;
+}
+.nav-link-footer{
+	padding:0 !important;
+}
+
+

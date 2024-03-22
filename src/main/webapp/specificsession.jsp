@@ -37,9 +37,9 @@
 				<ul class="navbar-nav">
 					<li class="nav-item"><a
 						class="nav-link headermenu menuhere semi"
-						href="SessionListServlet?date=datenull">Look For Sessions</a></li>
+						href="SessionListServlet?date=datenull">イベントを探す</a></li>
 					<li class="nav-item"><a class="nav-link headermenu semi"
-						href="PeersServlet">Look For Peers</a></li>
+						href="PeersServlet">仲間を探す</a></li>
 				</ul>
 			</div>
 		</div>
@@ -50,7 +50,7 @@
 			<div class="row col-lg-6">
 				<div class="col-lg-5 col-12">
 					<a href="SessionListServlet?date=datenull"><i
-						class="fa-solid fa-arrow-left"></i>View all Sessions</a>
+						class="fa-solid fa-arrow-left"></i>イベント一覧</a>
 				</div>
 			</div>
 		</div>
@@ -102,9 +102,9 @@
 												<c:if test="${memberids.get(0)==sessiondetail[0]}">
 													<c:forEach var="memberid" items="${memberids}">
 														<c:if test="${memberid==loginModel.id}">
-															<div class="col-2 center">
+															<div class="col-3 center">
 																<a href="NotjoinServlet?action=${sessiondetail[0]}"
-																	class="btn btn-success btn-sm" id="joined">Joined</a>
+																	class="btn btn-secondary btn-sm mini" id="joined">キャンセル</a>
 															</div>
 															<%
 															ismember = true;
@@ -118,9 +118,9 @@
 											</c:forEach>
 
 											<c:if test="${ismember!=true}">
-												<div class="col-2 center">
+												<div class="col-3 center">
 													<a href="JoinServlet?action=${sessiondetail[0]}"
-														class="btn btn-primary btn-sm" id="join">Join</a>
+														class="btn btn-primary btn-sm mini" id="join">参加</a>
 												</div>
 											</c:if>
 										</c:if>

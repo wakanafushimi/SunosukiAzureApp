@@ -64,6 +64,13 @@ if(deleteBtn){
 }
 
 //-------------------都道府県-ゲレンデ-------------------------------
+const gerende = document.getElementById('gerende');
+const prefecture = document.getElementById('prefecture');
+prefecture.addEventListener('change', (e) => {
+  gerende.style.display="block";
+});
+
+
 const gerendeselect = document.getElementById("gerendeselect");
 
 async function initAreaSelector(){
